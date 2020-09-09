@@ -1,4 +1,9 @@
-import {addDiv} from './modules';
+import {
+    navRender
+
+} from './render';
+
 import './style.css';
 
-addDiv()
+
+navRender()
