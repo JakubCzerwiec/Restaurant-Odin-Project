@@ -1,4 +1,4 @@
-import Cook from './img/cooks3.jpg';
+import Cook from './img/cooks22.jpg';
 const cookFoto = new Image();
 cookFoto.src = Cook;
 
