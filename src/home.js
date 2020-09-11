@@ -13,10 +13,13 @@ function homeRender1 () {
     
     const cooks  = cookFoto;
     
+    const cooksFoto = document.createElement('div')
+    cooksFoto.className = 'cooks_foto';
 
     content.appendChild(main)
     main.appendChild(header)
-    main.appendChild(cooks)
+    main.appendChild(cooksFoto)
+    cooksFoto.appendChild(cooks)
 }
 
 function homeRender () {
@@ -33,10 +36,13 @@ function homeRender () {
     
     const cooks  = cookFoto;
     
+    const cooksFoto = document.createElement('div')
+    cooksFoto.className = 'cooks_foto';
 
     content.appendChild(main)
     main.appendChild(header)
-    main.appendChild(cooks)
+    main.appendChild(cooksFoto)
+    cooksFoto.appendChild(cooks)
 }
 
 export {

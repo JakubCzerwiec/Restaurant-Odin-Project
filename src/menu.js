@@ -19,36 +19,36 @@ function menuRender () {
     
 
 
-    const pizza = new Dish('Pizza', 'Delicious', 7);
+    const pizza = new Dish('Pizza', 'Tomato sauce, mozzarella Fior di Latte, porchetta, red onion, lamb’s lettuce, marinated peperoncino pepper, mayonnaise sauce.', 7);
     const pizzaDiv = document.createElement('div');
     pizzaDiv.className = 'menu_item';
-    pizzaDiv.innerHTML = `${pizza.name}
-                            ${pizza.description}
-                            ${pizza.prize}`;
+    pizzaDiv.innerHTML = `<h5>${pizza.name}</h5> <br>
+                            ${pizza.description} <br>
+                            Prize: ${pizza.prize}`;
     main.appendChild(pizzaDiv);
     
-    const pasta = new Dish('Pasta', 'Fabulous', 8);
+    const pasta = new Dish('Pasta', 'Tagliatelle in cream sauce with pieces of salmon, peas and sun-dried cherry tomatoes.', 8);
     const pastaDiv = document.createElement('div');
     pastaDiv.className = 'menu_item';
-    pastaDiv.innerHTML = `${pasta.name}
-                            ${pasta.description}
-                            ${pasta.prize}`;
+    pastaDiv.innerHTML = `<h5>${pasta.name}</h5> <br>
+                            ${pasta.description} <br>
+                            Prize: ${pasta.prize}`;
     main.appendChild(pastaDiv);
 
-    const tortellini = new Dish('Tortellini', 'Glorious', 6);
+    const tortellini = new Dish('Risotto', 'Risotto with asparagus and sweet peas in cream sauce with mascarpone, white wine and Pecorino Romano.', 6);
     const tortelliniDiv = document.createElement('div');
     tortelliniDiv.className = 'menu_item';
-    tortelliniDiv.innerHTML = `${tortellini.name}
-                                ${tortellini.description}
-                                ${tortellini.prize}`;
+    tortelliniDiv.innerHTML = `<h5>${tortellini.name}</h5> <br>
+                                ${tortellini.description} <br>
+                                Prize: ${tortellini.prize}`;
     main.appendChild(tortelliniDiv);
 
-    const ravioli = new Dish('Ravioli', 'Gorgous', 7);
+    const ravioli = new Dish('Spaghetti', 'Spaghetti in cream sauce and egg yolk with bacon and Grana Padano.', 7);
     const ravioliDiv = document.createElement('div');
     ravioliDiv.className = 'menu_item';
-    ravioliDiv.innerHTML = `${ravioli.name}
-                            ${ravioli.description}
-                            ${ravioli.prize}`;
+    ravioliDiv.innerHTML = `<h5>${ravioli.name}</h5> <br>
+                            ${ravioli.description} <br>
+                            Prize: ${ravioli.prize}`;
     main.appendChild(ravioliDiv);
 
 }

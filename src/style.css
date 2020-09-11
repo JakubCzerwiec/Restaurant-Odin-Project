@@ -1,3 +1,81 @@
-body {
-    background-color: red;
+/* General properties */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Nav bar */
+
+nav {
+    width: 100%;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu li {
+    list-style: none;
+    padding: .5em;
+    font-size: 2em;
+    text-align: center;
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+}
+
+.home_header {
+    display: flex;
+    text-align: center;
+    padding: .5em;
+    justify-content: center;
+}
+
+.cooks_foto {
+    display: flex;
+    justify-content: center;
+}
+
+.cooks_foto img {
+    border-radius: 70%;
+    height: 50vh;
+}
+
+/* Contact */
+
+.adress {
+    font-size: 2em;
+    width: 85%;
+    margin: auto;
+}
+
+.adress p {
+    padding: .2em;
+}
+
+/* Menu */
+
+.menu_item {
+    width: 95%;
+    padding: 1em;
+
+}
+
+/* About */
+
+.about {
+    width: 90%;
+    padding: 1em;
+    line-height: 1.5em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
 }

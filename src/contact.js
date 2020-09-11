@@ -13,12 +13,12 @@ function contactRender () {
 
     const restName = document.createElement('p');
     restName.className = 'restName';
-    restName.textContent = 'Fabulous restaurant';
+    restName.textContent = 'Fabulous Restaurant';
     adress.appendChild(restName);
 
     const street = document.createElement('p');
     street.className = 'street';
-    street.textContent = 'Awesome str. 2';
+    street.textContent = 'Awesome st. 2';
     adress.appendChild(street);
 
     const city = document.createElement('p');
