@@ -5,6 +5,19 @@ function navRender () {
 
     const nav = document.createElement('nav');
 
+    const burger = document.createElement('div');
+    burger.className = 'burger';
+    nav.appendChild(burger);
+
+    const burgerTop = document.createElement('div');
+    burgerTop.className = 'b-top';
+    const burgerBot = document.createElement('div');
+    burgerBot.className = 'b-bot';
+
+    burger.appendChild(burgerTop);
+    burger.appendChild(burgerBot)
+    
+
     const list = document.createElement('ul');
     list.className = 'menu';
 
