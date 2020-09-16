@@ -16,6 +16,9 @@ function menuRender () {
     main.innerHTML = '';
     content.appendChild(main);
     
+    const menuDiv = document.createElement('div');
+    menuDiv.className = 'menuDiv';
+    main.appendChild(menuDiv);
     
 
 
@@ -25,7 +28,7 @@ function menuRender () {
     pizzaDiv.innerHTML = `<h5>${pizza.name}</h5> <br>
                             ${pizza.description} <br>
                             Prize: ${pizza.prize}`;
-    main.appendChild(pizzaDiv);
+    menuDiv.appendChild(pizzaDiv);
     
     const pasta = new Dish('Pasta', 'Tagliatelle in cream sauce with pieces of salmon, peas and sun-dried cherry tomatoes.', 8);
     const pastaDiv = document.createElement('div');
@@ -33,7 +36,7 @@ function menuRender () {
     pastaDiv.innerHTML = `<h5>${pasta.name}</h5> <br>
                             ${pasta.description} <br>
                             Prize: ${pasta.prize}`;
-    main.appendChild(pastaDiv);
+    menuDiv.appendChild(pastaDiv);
 
     const tortellini = new Dish('Risotto', 'Risotto with asparagus and sweet peas in cream sauce with mascarpone, white wine and Pecorino Romano.', 6);
     const tortelliniDiv = document.createElement('div');
@@ -41,7 +44,7 @@ function menuRender () {
     tortelliniDiv.innerHTML = `<h5>${tortellini.name}</h5> <br>
                                 ${tortellini.description} <br>
                                 Prize: ${tortellini.prize}`;
-    main.appendChild(tortelliniDiv);
+    menuDiv.appendChild(tortelliniDiv);
 
     const ravioli = new Dish('Spaghetti', 'Spaghetti in cream sauce and egg yolk with bacon and Grana Padano.', 7);
     const ravioliDiv = document.createElement('div');
@@ -49,7 +52,7 @@ function menuRender () {
     ravioliDiv.innerHTML = `<h5>${ravioli.name}</h5> <br>
                             ${ravioli.description} <br>
                             Prize: ${ravioli.prize}`;
-    main.appendChild(ravioliDiv);
+    menuDiv.appendChild(ravioliDiv);
 
 }
 

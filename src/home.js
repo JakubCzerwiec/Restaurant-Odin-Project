@@ -6,6 +6,10 @@ function homeRender1 () {
     const main = document.createElement('main');
     main.innerHTML = '';
 
+    const home = document.createElement('div');
+    home.className = 'home';
+    main.appendChild(home);
+
     const header = document.createElement('h1');
     header.className = 'home_header';
     header.textContent = 'Welcome to our fabulous restaurant';
@@ -17,8 +21,8 @@ function homeRender1 () {
     cooksFoto.className = 'cooks_foto';
 
     content.appendChild(main)
-    main.appendChild(header)
-    main.appendChild(cooksFoto)
+    home.appendChild(header)
+    home.appendChild(cooksFoto)
     cooksFoto.appendChild(cooks)
 }
 
@@ -29,6 +33,10 @@ function homeRender () {
     main.innerHTML = '';
     content.appendChild(main);
 
+    const home = document.createElement('div');
+    home.className = 'home';
+    main.appendChild(home);
+
     const header = document.createElement('h1');
     header.className = 'home_header';
     header.textContent = 'Welcome to our fabulous restaurant';
@@ -40,8 +48,8 @@ function homeRender () {
     cooksFoto.className = 'cooks_foto';
 
     content.appendChild(main)
-    main.appendChild(header)
-    main.appendChild(cooksFoto)
+    home.appendChild(header)
+    home.appendChild(cooksFoto)
     cooksFoto.appendChild(cooks)
 }
 

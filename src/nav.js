@@ -4,10 +4,11 @@ function navRender () {
     const content = document.getElementById('content');
 
     const nav = document.createElement('nav');
+    nav.classList = 'hidden';
 
     const burger = document.createElement('div');
     burger.className = 'burger';
-    nav.appendChild(burger);
+    
 
     const burgerTop = document.createElement('div');
     burgerTop.className = 'b-top';
@@ -41,6 +42,7 @@ function navRender () {
     li4.textContent = 'CONTACT';
     list.appendChild(li4);
 
+    content.appendChild(burger);
     content.appendChild(nav)
     nav.appendChild(list)
 }
