@@ -4,6 +4,7 @@ function homeRender1 () {
     const content = document.getElementById('content');
 
     const main = document.createElement('main');
+    
     main.innerHTML = '';
 
     const home = document.createElement('div');
@@ -14,7 +15,6 @@ function homeRender1 () {
     header.className = 'home_header';
     header.innerHTML = 'Welcome to our <p>Fabulous Restaurant</p>';
 
-    
     const cooks  = cookFoto;
     
     const cooksFoto = document.createElement('div')

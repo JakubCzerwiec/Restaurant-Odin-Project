@@ -1,3 +1,5 @@
+/* Dish class */
+
 class Dish {
     constructor(name, description, prize) {
         this.name = name;
@@ -21,7 +23,8 @@ function menuRender () {
     main.appendChild(menuDiv);
     
 
-
+    /* Creating dishes */
+    
     const pizza = new Dish('Pizza', 'Tomato sauce, mozzarella Fior di Latte, porchetta, red onion, lamb’s lettuce, marinated peperoncino pepper, mayonnaise sauce.', 7);
     const pizzaDiv = document.createElement('div');
     pizzaDiv.className = 'menu_item';

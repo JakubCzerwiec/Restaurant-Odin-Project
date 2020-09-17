@@ -1,3 +1,5 @@
+/* Imports */
+
 import {
     navRender,
     homeRender,
@@ -7,14 +9,17 @@ import {
     homeRender1
 } from './render';
 
-
-
 import './style.css';
 
+
+/* Home page initialization */
 
 navRender();
 
 homeRender1()
+
+
+/* Event listeners */
 
 const homeBtn = document.querySelector('.nav_home');
 const aboutBtn = document.querySelector('.nav_about');
@@ -24,7 +29,6 @@ const main = document.querySelector('main');
 const burgerBtn = document.querySelector('.burger');
 const burgerBott = document.querySelector('.b-bot');
 const nav = document.querySelector('nav');
-
 
 
 homeBtn.addEventListener('click', () => {
