@@ -18,6 +18,11 @@
     height: 100vh;
 }
 
+p {
+    font-family: var(--ff-vibes);
+    font-size: 1.3em;
+}
+
 /* Nav bar */
 
 nav {
@@ -25,15 +30,21 @@ nav {
     height: auto;
     position: fixed;
     background-color: white;
+    transition: transform 400ms cubic-bezier(.5, 0, .5, 1);
+    
 }
 
 .hidden {
-    transform: translateX(100%)
+    transform: translateY(-100%)
 }
 
 .home {
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 /* Burger (mobile only) */
 
@@ -57,6 +68,10 @@ nav {
     width: 1.5em;
     height: 3px;
     margin-left: auto;
+}
+
+.b-bot-click {
+    width: 3em;
 }
 
 .menu {
@@ -89,7 +104,7 @@ main {
     text-align: center;
     padding: .5em;
     justify-content: center;
-
+    flex-direction: column;
 }
 
 .cooks_foto {

@@ -13,27 +13,27 @@ function contactRender () {
 
     const restName = document.createElement('p');
     restName.className = 'restName';
-    restName.textContent = 'Fabulous Restaurant';
+    restName.innerText = 'Fabulous Restaurant';
     adress.appendChild(restName);
 
     const street = document.createElement('p');
     street.className = 'street';
-    street.textContent = 'Awesome st. 2';
+    street.innerText = 'Awesome st. 2';
     adress.appendChild(street);
 
     const city = document.createElement('p');
     city.className = 'street';
-    city.textContent = 'Krakow';
+    city.innerText = '30-069 Krakow';
     adress.appendChild(city);
 
     const country = document.createElement('p');
     country.className = 'country';
-    country.textContent = 'Poland';
+    country.innerText = 'Poland';
     adress.appendChild(country);
 
     const phone = document.createElement('p');
     phone.className = 'phone';
-    phone.textContent = '+48 123 456 789';
+    phone.innerText = '+48 123 456 789';
     adress.appendChild(phone);
 }
 

@@ -12,7 +12,7 @@ function homeRender1 () {
 
     const header = document.createElement('h1');
     header.className = 'home_header';
-    header.textContent = 'Welcome to our fabulous restaurant';
+    header.innerHTML = 'Welcome to our <p>Fabulous Restaurant</p>';
 
     
     const cooks  = cookFoto;
@@ -39,7 +39,7 @@ function homeRender () {
 
     const header = document.createElement('h1');
     header.className = 'home_header';
-    header.textContent = 'Welcome to our fabulous restaurant';
+    header.innerHTML = 'Welcome to our <p>Fabulous Restaurant</p>';
 
     
     const cooks  = cookFoto;
