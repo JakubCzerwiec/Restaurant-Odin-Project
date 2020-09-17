@@ -1,2 +1,2 @@
 # Restaurant-Odin-Project
-Restaurant web page from Odin Projects. Using webpack.
+Restaurant web page from Odin Projects. Responsive for mobiles and desktop. Using webpack.
